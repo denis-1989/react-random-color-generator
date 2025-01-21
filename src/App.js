@@ -29,7 +29,7 @@ function App() {
           marginTop: '20px',
         }}
       >
-        Generated color: {color} {/* Display the HEX code */}
+        Generated Color: {color} {/* Display the HEX code */}
       </div>
     </div>
   );
