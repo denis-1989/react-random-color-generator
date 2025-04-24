@@ -13,7 +13,6 @@ export default function App() {
     setColor(newColor);
   };
 
-  // Determine if text color should be dark or light
   const isDark =
     parseInt(color.replace('#', ''), 16) < 0xffffff / 2 ? true : false;
 
