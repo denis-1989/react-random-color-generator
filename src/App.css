@@ -1,32 +1,71 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: #f0f2f5;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
 .App {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  min-height: 100vh;
+  padding-top: 80px;
   text-align: center;
-  font-family: Arial, sans-serif;
-  margin-top: 50px;
+  padding-left: 20px;
+  padding-right: 20px;
 }
 
 h1 {
   font-size: 36px;
-  color: #333;
-  margin-bottom: 20px;
+  color: #2c3e50;
+  margin-bottom: 30px;
 }
 
 button {
-  padding: 10px 20px;
-  font-size: 16px;
-  cursor: pointer;
-  background-color: #007bff;
+  background: linear-gradient(135deg, #007bff, #0056b3);
   color: white;
+  font-size: 18px;
+  font-weight: bold;
+  padding: 12px 28px;
   border: none;
-  border-radius: 5px;
+  border-radius: 8px;
+  cursor: pointer;
+  box-shadow: 0 4px 12px rgba(0, 123, 255, 0.4);
+  transition:
+    transform 0.2s ease,
+    box-shadow 0.3s ease;
+  margin-top: 30px;
 }
 
 button:hover {
-  background-color: #0056b3;
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(0, 123, 255, 0.5);
 }
 
-.color-box {
-  display: inline-block;
-  width: 200px;
-  text-align: center;
-  margin: 0 auto;
+.color-card {
+  background-color: var(--color, #ffffff);
+  color: var(--textColor, #000000);
+  padding: 30px;
+  margin-top: 40px;
+  border-radius: 12px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+  width: 280px;
+  transition: background-color 0.5s ease;
+}
+
+.color-card span {
+  display: block;
+  font-size: 16px;
+  margin-bottom: 12px;
+}
+
+.color-card code {
+  font-weight: bold;
+  font-size: 22px;
 }
